@@ -1,0 +1,277 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans,colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue,anchorcolor=blue]{moderncv}
+\usepackage{lmodern}
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+% \usepackage{geometry}
+%  \geometry{
+%  a4paper,
+%  % total={162mm,245mm},
+%  left=22mm,
+%  right=22mm,
+%  % top=22mm,
+%  % bottom=22mm
+%  }
+\usepackage[utf8]{inputenc} 
+% \usepackage[english]{babel}
+\usepackage[absolute]{textpos}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+\usepackage{blindtext} % Just to have some dummy text
+\moderncvtheme[grey]{classic} 
+\microtypesetup{expansion=false}
+\nopagenumbers{}                             
+\AtBeginDocument{\recomputelengths}
+
+\newcommand{\MYhref}[3][black]{\href{#2}{\color{#1}{#3}}}%
+
+
+
+% \pagenumbers{plain}
+
+%\renewcommand{\listitemsymbol}{-~}  % change the symbol for lists
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+
+% adjust the page margins
+\usepackage[top=1.07cm, bottom=1.13cm, left=2cm, right=2cm]{geometry}
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{2cm}
+
+%\setlength{\makecvtitlenamewidth}{9cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Pengyu}
+\familyname{Liu}
+                        
+\address{6019, Gates \& Hillman Centers, CMU}{Pittsburgh, PA 15213}   
+\phone{+1 412-251-2404}
+%\phone{+33(0)4.76.24.10.36}       
+\email{pengyul@andrew.cmu.edu} 
+\homepage{pengyuliu.me}
+% \extrainfo{\href{https://hanruiwang.mit.edu}{}}
+% \photo[64pt][0.3pt]{foto.jpg}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \title{Analityk/specjalista ds. metod ilościowych}
+
+% \AfterPreamble{\hypersetup{
+%   pdfauthor={Hanrui Wang},
+%   pdftitle={CV Hanrui Wang},
+%   pdfsubject={CV},
+%   % urlcolor=blue,
+% }}
+
+% \usepackage[colorlinks=true,
+%             linkcolor=blue,
+%             urlcolor=blue,
+%             citecolor=blue,
+%             anchorcolor=blue]{hyperref}
+
+% \nopagenumbers
+% \AtEndPreamble{%
+%   \AtBeginDocument{%
+%           \newlength{\pagenumberwidth}%
+%           \settowidth{\pagenumberwidth}{\color{color2}\addressfont\itshape\thepage}%
+%           \fancypagestyle{plain}{%
+%             \fancyfoot[r]{\parbox[b]{\pagenumberwidth}{\color{color2}\pagenumberfont\thepage}}}
+%           \pagestyle{plain}}}
+
+\fancyfoot[c]{\thepage}
+
+\begin{document}
+\makecvtitle
+
+\section{Research Interests}
+
+Quantum Error Correction; Quantum Computer Architecture and Systems; Quantum Compiler Optimizations
+
+
+\section{Education}
+
+\cventry{2023.09 - Present}{Carnegie Mellon University}{}{}{}{\begin{itemize}
+    \item Ph.D. Student, Computer Science Department
+    \item Advisor: Prof. Umut A. Acar
+\end{itemize}}
+
+\cventry{2019.09 - 2023.06}{Tsinghua University}{}{}{}{\begin{itemize}
+    \item BEng in Computer Science, Institute for Interdisciplinary Information Sciences, founded by Prof. Andrew Yao
+    \item Advisor: Prof. Xiongfeng Ma
+    \item GPA: 3.98/4.00 (TOP 1/30)
+\end{itemize}}
+
+
+\section{Selected Honors and Awards}
+
+\cvitem{2023}{\textbf{1$^\mathrm{st}$/73 Place} of ACM/IEEE Quantum Computing for Drug Discovery Challenge}
+ \cvitem{2022-2023}{\textbf{Honored graduate}, Beijing}
+ \cvitem{2022-2023}{\textbf{Honored graduate}, Tsinghua University (2/91)}
+ \cvitem{2021-2022}{\textbf{Comprehensive Excellent Award}, Tsinghua University}
+ \cvitem{2021-2022}{\textbf{Yao Award}, Institute for Interdisciplinary Information Sciences}
+ \cvitem{2020-2021}{\textbf{Comprehensive Excellent Award}, Tsinghua University}
+\cvitem{2020-2021}{\textbf{Outstanding Youth}, Tsinghua University (2/91)}
+ \cvitem{2019-2020}{\textbf{Comprehensive Excellent Award}, Tsinghua University (1/91, Highest honor)}
+\cvitem{2018}{\textbf{Gold Medal}, Chinese Physics Olympiad (Rank $7^{th}$ nationwide)}
+\cvitem{2018}{\textbf{First Prize}, Chinese Physics Olympiad Provincial (Rank $1^{st}$ in Hebei Province)}
+
+
+
+
+% \section{Selected Research Projects}
+
+% \cvitem{}{Software Stack for Reliable Quantum computing}
+
+% \cvitem{}{Hardware Support for Quantum}
+
+
+
+
+
+\section{Publications \hfill \small{*: Equal Contribution}}
+
+% \cvitem{}{\textbf{\underline{Refereed Conference Papers}}}
+\cventry{SPAA'25}{POPQC: Parallel Optimization for Quantum Circuits (To Appear)}{}{}{}{\textbf{Pengyu Liu}, Jatin Arora, Mingkuan Xu, Umut A. Acar\\\textit{ACM Symposium on Parallelism in Algorithms and Architectures}}
+
+\cventry{QCE'24}{\MYhref{https://www.cs.cmu.edu/~swestric/24/qce24-grafeyn.pdf}{GraFeyn: Efficient Parallel Sparse Simulation of Quantum Circuits}}{}{}{}{Sam Westrick, \textbf{Pengyu Liu}, Byeongjee Kang, Colin McDonald, Mike Rainey, Mingkuan Xu, Jatin Arora, Yongshan Ding, Umut A. Acar\\\textit{IEEE International Conference on Quantum Computing and Engineering}\\\textcolor{red}{Best Paper Award(2nd place)}}
+\cventry{ISCA'24}{\MYhref{https://arxiv.org/pdf/2311.15123.pdf}{Atomique: A Quantum Compiler for Reconfigurable Neutral Atom Arrays}}{}{}{}{Hanrui Wang, \textbf{Pengyu Liu}, Bochen Tan, Yilian Liu, David Z. Pan, Jason Cong, Umut Acar, Song Han\\\textit{The International Symposium on Computer Architecture }}
+\cventry{DAC'24}{\MYhref{https://arxiv.org/pdf/2311.16190.pdf}{Q-Pilot: Field Programmable Qubit Array Compilation with Flying Ancillas}}{}{}{}{Hanrui Wang, Bochen Tan, \textbf{Pengyu Liu}, Yilian Liu, Jiaqi Gu, Jason Cong, Song Han\\\textit{Design Automation Conference (DAC), 2024}}
+
+\cventry{POPL'24}{\MYhref{https://arxiv.org/abs/2303.02775}{SimuQ: A Domain-Specific Language For Quantum Simulation With Analog Compilation}}{}{}{}{Yuxiang Peng, Jacob Young, \textbf{Pengyu Liu}, and Xiaodi Wu\\\textit{51st ACM SIGPLAN Symposium on Principles of Programming Languages\\\textcolor{red}{Distinguished Paper Nominated}}}
+
+
+
+
+
+\cventry{PRL}
+{\MYhref{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.230503}{Fundamental Limitation on the Detectability of Entanglement}}{}{}{}{
+\textbf{Pengyu Liu}, Zhenhuan Liu, Shu Chen, and Xiongfeng Ma\\ \textit{Physical Review Letters 129, 230503 (2022)}\\ \textit{
+ \textcolor{red}{Editors' Suggestion (Top 16\%)}
+}
+}
+\cventry{TQC}
+{\MYhref{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.230503}{Fundamental Limitation on the Detectability of Entanglement}}{}{}{}{
+\textbf{Pengyu Liu}, Zhenhuan Liu, Shu Chen, and Xiongfeng Ma\\ \textit{Conference on the Theory of Quantum Computation, Communication and Cryptography}
+}
+\cventry{PRL}
+{\MYhref{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.260501}{Detecting Entanglement in Quantum Many-body Systems via Permutation Moments}}{}{}{}{
+Zhenhuan Liu, Yifan Tang, Hao Dai, \textbf{Pengyu Liu}, Shu Chen, and Xiongfeng Ma\\ \textit{Physical Review Letters 129, 260501 (2022)}
+}
+
+
+
+
+\cventry{ICCAD'22}{\MYhref{https://arxiv.org/pdf/2210.16724.pdf}{QuEst: Graph Transformer for Quantum Circuit Reliability Prediction}}{}{}{}{Hanrui Wang, \textbf{Pengyu Liu}, Jinglei Cheng, Zhiding Liang, Jiaqi Gu, Zirui Li, Yongshan Ding, Weiwen Jiang, Yiyu Shi, Xuehai Qian, David Z. Pan, Frederic T. Chong, Song Han\\ \textit{IEEE/ACM International Conference on Computer-Aided Design (ICCAD), 2022}}
+
+
+
+
+
+
+
+
+
+\cvitem{}{\textbf{\underline{In Submission}}}
+
+
+
+\cventry{}{{ConiQ: Enabling Concatenated Quantum Error Correction on Neutral Atom Arrays}}{}{}{}{\textbf{Pengyu Liu}, Mingkuan Xu, Hengyun Zhou, Hanrui Wang, Umut Acar, Yunong Shi}
+
+
+\cventry{}{{Local Optimization of Quantum Circuits}}{}{}{}{Jatin Arora, Mingkuan Xu, Sam Westrick, \textbf{Pengyu Liu}, Dantong Li, Yongshan Ding and Umut A. Acar	} 
+
+
+\cvitem{}{\textbf{\underline{Preprints}}}
+
+
+
+\cventry{}{{DGR: Tackling Drifted and Correlated Noise in Quantum Error Correction via Decoding Graph Re-weighting}}{}{}{}{Hanrui Wang$^*$, \textbf{Pengyu Liu}$^*$, Yilian Liu, Jiaqi Gu, Jonathan Baker, Frederic T. Chong, Song Han}
+
+
+\cventry{}{{RobustState: Boosting Fidelity of Quantum State Preparation via Noise-Aware Variational Training}}{}{}{}{Yilian Liu$^*$, \textbf{Pengyu Liu$^*$},  Jiaqi Gu, Zirui Li, Jinglei Cheng and Hanrui Wang} 
+
+\cventry{}{{Transformer-QEC: Quantum Error Correction Code Decoding with Transferable Transformers}}{}{}{}{\textbf{Pengyu Liu}, Kevin Shao, Dantong Li, Jiaqi Gu, Yongshan Ding, Hanrui Wang}
+
+
+% \section{Selected Projects}
+
+% \cventry{}{Software stack and compiler for reliable quantum computing}{}{}{}{\begin{itemize}
+%     \item \href{https://arxiv.org/pdf/2311.15123.pdf}{FPQA-C Compiler}, \href{https://arxiv.org/pdf/2311.16190.pdf}{Q-Pilot Compiler}, \href{https://arxiv.org/pdf/2107.10845.pdf}{Variational Program Structure Design}, \href{https://github.com/mit-han-lab/torchquantum}{TorchQuantum Library}
+% \end{itemize}}
+
+
+\section{Teaching Experiences}
+
+\cvitem{2023}{\textbf{Teaching Assistant} ``General Physics''}
+\cvitem{2022}{\textbf{Teaching Assistant} ``Quantum Communication and Cryptography''}
+
+\section{Working and Exchanging Experiences}
+\cventry{2025.05 - 2025.08}{QuEra Computing Incorporated}{Boston, MA}{Research Intern}{}{\begin{itemize}
+    \item Advised by Dr. Chen Zhao.
+    \item Worked on simulation and decoding of quantum error correction with the presence of atom loss.
+\end{itemize}}
+
+\cventry{2022.02 - 2023.06}{Tsinghua University}{Beijing, China}{Research Assistant}{}{\begin{itemize}
+    \item Advised by Prof. Xiongfeng Ma.
+    \item Worked on quantum entanglement detection.
+\end{itemize}}
+
+\cventry{2022.07 - 2023.06}{Massachusetts Institute of Technology}{Boston, MA}{Research Assistant}{}{\begin{itemize}
+    \item Advised by Prof. Song Han.
+    \item Worked on quantum machine learning and quantum computer architecture.
+\end{itemize}}
+
+\cventry{2022.03 - 2022.11}{University of Maryland}{College Park, MD}{Research Assistant}{}{\begin{itemize}
+    \item Advised by Prof. Xiaodi Wu.
+    \item Worked on analog quantum simulation.
+\end{itemize}}
+
+\section{Academic Services}
+
+
+ \cvitem{2022-present}{Student Volunteer \href{https://sites.nd.edu/quantum/}{Quantum Computer System Lecture Series}}
+ \cvitem{2022-2023}{Member of organizing committee of \href{https://group.iiis.tsinghua.edu.cn/~stu/seminar/}{Yao Seminar}}
+ \cvitem{}{\textbf{Journal Reviewer}, TQE, TQC, JDPC}
+
+\cvitem{}{\textbf{Conference Reviewer}, QCE'24, QCE'25, SPAA'25}
+% \section{Grants}
+
+
+% \section{Open-Source Software}
+
+
+
+% \section{Press}
+
+
+
+% \section{Patents}
+
+
+
+
+
+% \section{Additional Honors and Awards}
+
+
+
+
+% \section{Talks}
+
+% \cventry{}{Intelligent Cross-Stack Co-Design of Quantum Computer Systems}{}{}{}{\begin{itemize}
+%     \item 2023, Road4NN Workshop at DAC 2023
+% \end{itemize}}
+
+
+
+
+
+
+
+
+\end{document}
+
+
